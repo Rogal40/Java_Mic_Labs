@@ -1,0 +1,22 @@
+20:39:53.380 [ApplicationImpl pooled thread 58] INFO  c.b.l.BrowserStackRunExtension - spring boot
+20:39:53.381 [ApplicationImpl pooled thread 58] INFO  com.browserstack.utils.Helpers - null
+20:43:47.690 [ApplicationImpl pooled thread 91] INFO  c.b.l.BrowserStackRunExtension - spring boot
+20:43:47.690 [ApplicationImpl pooled thread 91] INFO  com.browserstack.utils.Helpers - null
+20:44:29.306 [ApplicationImpl pooled thread 81] INFO  c.b.l.BrowserStackRunExtension - spring boot
+20:44:29.306 [ApplicationImpl pooled thread 81] INFO  com.browserstack.utils.Helpers - null
+20:45:40.459 [ApplicationImpl pooled thread 93] INFO  c.b.l.BrowserStackRunExtension - spring boot
+20:45:40.459 [ApplicationImpl pooled thread 93] INFO  com.browserstack.utils.Helpers - null
+21:11:59.964 [ApplicationImpl pooled thread 134] INFO  c.b.l.BrowserStackRunExtension - spring boot
+21:11:59.964 [ApplicationImpl pooled thread 134] INFO  com.browserstack.utils.Helpers - null
+21:16:19.094 [ApplicationImpl pooled thread 142] INFO  c.b.l.BrowserStackRunExtension - spring boot
+21:16:19.095 [ApplicationImpl pooled thread 142] INFO  com.browserstack.utils.Helpers - null
+21:21:46.372 [ApplicationImpl pooled thread 121] INFO  c.b.l.BrowserStackRunExtension - spring boot
+21:21:46.372 [ApplicationImpl pooled thread 121] INFO  com.browserstack.utils.Helpers - null
+21:25:34.877 [ApplicationImpl pooled thread 141] INFO  c.b.l.BrowserStackRunExtension - spring boot
+21:25:34.877 [ApplicationImpl pooled thread 141] INFO  com.browserstack.utils.Helpers - null
+21:28:30.769 [ApplicationImpl pooled thread 146] INFO  c.b.l.BrowserStackRunExtension - spring boot
+21:28:30.770 [ApplicationImpl pooled thread 146] INFO  com.browserstack.utils.Helpers - null
+21:37:17.231 [ApplicationImpl pooled thread 151] INFO  c.b.l.BrowserStackRunExtension - spring boot
+21:37:17.231 [ApplicationImpl pooled thread 151] INFO  com.browserstack.utils.Helpers - null
+10:43:12.493 [ApplicationImpl pooled thread 34] INFO  c.b.l.BrowserStackRunExtension - spring boot
+10:43:12.494 [ApplicationImpl pooled thread 34] INFO  com.browserstack.utils.Helpers - null
