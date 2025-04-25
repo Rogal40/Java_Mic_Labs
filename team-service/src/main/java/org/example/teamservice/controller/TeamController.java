@@ -9,7 +9,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/teams")
-public class  TeamController {
+public class TeamController {
 
     private final TeamRepository teamRepository;
     private final DriverClient driverClient;
@@ -22,9 +22,11 @@ public class  TeamController {
     @GetMapping
     public List<Team> getAll() {
         List<Team> teams = teamRepository.findAll();
-        teams.forEach(team -> team.setDrivers(driverClient.getAllDrivers().stream()
-                .filter(driver -> driver.getTeam().equals(team.getName()))
-                .toList()));
+        teams.forEach(team -> team.setDrivers(
+                driverClient.getAllDrivers().stream()
+                        .filter(driver -> team.getName().equals(driver.getTeam()))
+                        .toList()
+        ));
         return teams;
     }
 
@@ -36,9 +38,11 @@ public class  TeamController {
     @GetMapping("/{id}")
     public Team getById(@PathVariable Long id) {
         return teamRepository.findById(id).map(team -> {
-            team.setDrivers(driverClient.getAllDrivers().stream()
-                    .filter(driver -> driver.getTeam().equals(team.getName()))
-                    .toList());
+            team.setDrivers(
+                    driverClient.getAllDrivers().stream()
+                            .filter(driver -> team.getName().equals(driver.getTeam()))
+                            .toList()
+            );
             return team;
         }).orElse(null);
     }
