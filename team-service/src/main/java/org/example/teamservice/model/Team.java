@@ -13,7 +13,7 @@ public class Team {
     private String country;
 
     @Transient
-    private List<DriverDTO> drivers; // Заполняется через Feign
+    private List<DriverDTO> drivers;
 
     public Long getId() {
         return id;

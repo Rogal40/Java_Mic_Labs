@@ -1,6 +1,7 @@
 package org.example.raceservice.controller;
 
 import org.example.raceservice.model.Race;
+import org.example.raceservice.model.Result;
 import org.example.raceservice.repository.RaceRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -20,6 +21,11 @@ public class RaceController {
 
     @PostMapping
     public Race create(@RequestBody Race race) {
+        if (race.getResults() != null) {
+            for (Result result : race.getResults()) {
+                result.setRace(race); // устанавливаем связь
+            }
+        }
         return raceRepository.save(race);
     }
 
@@ -41,7 +47,7 @@ public class RaceController {
                 .flatMap(r -> r.getResults().stream()
                         .filter(res -> res.getPosition() == 1)
                         .findFirst()
-                        .map(res -> res.getDriverName()))
+                        .map(Result::getDriverName))
                 .orElse("No winner yet");
     }
 }

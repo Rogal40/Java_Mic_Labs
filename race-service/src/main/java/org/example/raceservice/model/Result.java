@@ -1,5 +1,6 @@
 package org.example.raceservice.model;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import jakarta.persistence.*;
 
 @Entity
@@ -13,6 +14,7 @@ public class Result {
 
     @ManyToOne
     @JoinColumn(name = "race_id")
+    @JsonBackReference
     private Race race;
 
     public Long getId() {

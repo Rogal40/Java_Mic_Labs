@@ -1,5 +1,6 @@
 package org.example.raceservice.model;
 
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import java.time.LocalDate;
 import java.util.List;
@@ -14,6 +15,7 @@ public class Race {
     private LocalDate date;
 
     @OneToMany(mappedBy = "race", cascade = CascadeType.ALL)
+    @JsonManagedReference
     private List<Result> results;
 
     public Long getId() {
